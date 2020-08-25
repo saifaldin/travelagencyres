@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="text-gray-300 bg-gray-300" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/tailwind.css">
+    <script src="index.js" defer></script>
+    <title>Travel Agency</title>
+</head>
+
+<body>
+    <header class="bg-black bg-opacity-50 font-montserrat  z-10 w-full">
+        <div class="width flex text-sm justify-end items-center py-2 px-2 font-semibold">
+            <div class="hidden xl:block w-11/12 ml-2">
+                <div class="inline-block align-middle">
+                    <svg class="h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513.64 513.64">
+                        <path
+                            d="M499.66 376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36 17.92-7.68 23.041-33.28 35.841-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.041 7.68-48.641 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.641 307.2 125.44l48.64-48.64c17.921-20.48 17.921-51.2 0-69.12z" />
+                    </svg>
+                </div>
+                <p class="inline-block ml-1 align-middle font-normal text-xs">+921 - 48564254</p>
+                <div class="inline-block ml-4 align-middle">
+                    <svg class="h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 433.664 433.664">
+                        <path
+                            d="M229.376 271.616c-4.096 2.56-8.704 3.584-12.8 3.584s-8.704-1.024-12.8-3.584L0 147.2v165.376c0 35.328 28.672 64 64 64h305.664c35.328 0 64-28.672 64-64V147.2L229.376 271.616z" />
+                        <path
+                            d="M369.664 57.088H64c-30.208 0-55.808 21.504-61.952 50.176l215.04 131.072 214.528-131.072c-6.144-28.672-31.744-50.176-61.952-50.176z" />
+                    </svg>
+                </div>
+                <p class="inline-block ml-1 align-middle font-normal text-xs">demo@gamil.com</p>
+            </div>
+            <div class="w-full flex justify-between xl:justify-end items-center">
+                <div>
+                    <select class="mx-1" name="langs" id="">
+                        <option value="">Eng</option>
+                    </select>
+                    <select class="mr-4" name="currency" id="">
+                        <option value="">$USD</option>
+                    </select>
+                </div>
+                <div class="flex text-xs">
+                    <a class="mx-1" href="#">Sign In</a>
+                    <p class="mx-1" class="">|</p>
+                    <a class="mx-1" href="#">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="mb-2 h-px bg-white opacity-25"></div>
+        <div class="xl:h-12 relative">
+            <div class="width flex justify-between items-center xl:items-start px-4 pb-2 xl:mt-5">
+                <div class="w-24">
+                    <a href="#"><img class="w-24" id="logo" src="./images/LOGO.png" alt="logo"></a>
+                </div>
+                <div class="flex items-center xl:items-start">
+                    <div class="hidden xl:block h-16 flex items-center">
+                        <ul class="xl:flex">
+                            <li class=""><select name="home" id="">
+                                    <option value="">home</option>
+                                </select></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">packages</a></li>
+                            <li><a href="#">hotels</a></li>
+                            <li><a href="#">jobs</a></li>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
+                    <svg class="h-4 w-4 mx-3 xl:mx-4 xl:my-1 cursor-pointer fill-current"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M356.475 304.386c20.888-31.028 33.092-68.363 33.092-108.497 0-107.404-87.38-194.784-194.784-194.784S0 88.485 0 195.888s87.38 194.784 194.784 194.784c40.926 0 78.935-12.698 110.319-34.345l155.242 154.568L512 459.24 356.475 304.386zm-161.691 31.577c-77.067 0-139.768-62.7-139.768-139.768 0-77.067 62.7-139.767 139.768-139.767s139.768 62.7 139.768 139.768-62.701 139.767-139.768 139.767z" />
+                    </svg>
+                    <button class="orange-btn">book
+                        online</button>
+                    <div class="ml-6 cursor-pointer xl:hidden" id="ham-menu">
+                        <svg class="h-6 fill-current" id="ham-menu-closed" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 384">
+                            <path d="M0 277.333h384V320H0zM0 170.667h384v42.667H0zM0 64h384v42.667H0z" />
+                        </svg>
+                        <svg class="hidden h-5 ml-1 fill-current" id="ham-menu-open" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 180.607 180.607">
+                            <path
+                                d="M180.607 10.607l-79.696 79.697 79.696 79.697L170 180.607l-79.696-79.696-79.696 79.696L0 170.001l79.696-79.697L0 10.607 10.607.001l79.696 79.696L170 .001l10.607 10.606z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute hidden  px-2 py-1 text-white bg-gray-900 bg-opacity-9 w-full" id="menu">
+                <ul class="width grid grid-cols-2 grid-rows-4 xl:hidden h-32">
+                    <li class=""><select name="home" id="">
+                            <option value="">home</option>
+                        </select></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">packages</a></li>
+                    <li><a href="#">hotels</a></li>
+                    <li><a href="#">jobs</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="font-raleway text-gray-100">
+        <div class="absolute z-1 top-0 left-0 "><img class="h-screen-80 xl:h-huge w-screen object-cover" src="images/main-background-image.png"
+                alt="">
+        </div>
+        <div class=" w-full mt-10pc lg:mt-5px flex flex-col justify-end">
+            <div class="width px-4">
+                <h1
+                    class="uppercase text-xl sm:text-4xl lg:text-4xl xl:text-5xl font-extrabold leading-7 sm:leading-9 lg:leading-10 xl:leading-tight whitespace-no-wrap">
+                    pick the best city for you <br> our destinations</h1>
+                <p class="my-1 sm:my-3 text-xs text-gray-400 w-4/5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Suscipit quas molestias ab eveniet perspiciatis fuga nam in autem esse Lorem ipsum dolor sit
+                    amet!
+                </p>
+                <div class="mt-4">
+                    <button class="orange-btn mr-3 md:m-0">view more</button>
+                    <button class="orange-btn bg-transparent border hover:bg-transparent">more info</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="bg-white text-gray-700 flex flex-wrap w-10/12 xl:max-w-6xl md:min-w-700 mx-auto mt-12 py-1 rounded-tl-2xl rounded-br-2xl shadow-xl">
+                <div class="flex flex-col justify-center items-start md:justify-around w-10/12 md:w-1/4 mx-auto my-8 whitespace-no-wrap">
+                    <div class="flex items-center h-10">
+                        <svg class="h-6 w-6 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 152.96L79.894 288.469v181.549h141.507V336.973h75.175v133.045h135.531V288.469z"/>
+                            <path d="M439.482 183.132V90.307h-74.166v35.77L256 41.982 0 238.919l35.339 45.936L256 115.062l220.662 169.794L512 238.92z"/>
+                          </svg>
+                          <a class="uppercase text-lg font-bold ml-3 hover:text-orange-500" href="#">house insurance</a>
+                    </div>
+                    <div class="w-full md:w-56 h-px opacity-75 bg-gray-400 mb-3"></div>
+                    <div class="flex items-center h-10">
+                        <svg class="h-6 w-6 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M407.531 206.527a103.924 103.924 0 00-37.501 6.966c-9.124-20.276-17.007-41.719-20.944-61.668-6.323-32.038-34.634-55.291-67.318-55.291-8.284 0-15 6.716-15 15s6.716 15 15 15c3.569 0 7.044.498 10.355 1.423a38.81 38.81 0 0123.582 18.758 14.94 14.94 0 00-1.128 1.618l-4.66 7.845-23.576 39.69H160.377l-7.16-18.021h2.972c8.284 0 15-6.716 15-15s-6.716-15-15-15H104.47c-8.284 0-15 6.716-15 15s6.716 15 15 15h16.466l13.09 32.944a104.16 104.16 0 00-29.556-4.265C46.865 206.527 0 253.392 0 310.996s46.865 104.469 104.469 104.469c52.511 0 96.091-38.946 103.388-89.469h27.547a15 15 0 0012.896-7.339l78.827-132.706c4.624 14.31 10.412 28.648 16.651 42.346-24.747 19.122-40.716 49.079-40.716 82.7 0 57.604 46.865 104.469 104.469 104.469S512 368.601 512 310.997s-46.865-104.47-104.469-104.47zM104.469 325.996h72.951c-6.96 33.897-37.025 59.469-72.951 59.469C63.407 385.464 30 352.058 30 310.996s33.407-74.469 74.469-74.469c35.926 0 65.991 25.572 72.951 59.469h-72.951c-8.284 0-15 6.716-15 15s6.716 15 15 15zm122.398-30h-19.01c-3.481-24.099-15.216-45.561-32.241-61.421a15.004 15.004 0 00-.573-1.795l-2.746-6.911h96.225l-41.655 70.127zm180.664 89.468c-41.063 0-74.469-33.407-74.469-74.469 0-21.753 9.378-41.355 24.301-54.983 18.448 35.256 36.467 61.538 37.823 63.504 2.911 4.217 7.594 6.48 12.358 6.48 2.938 0 5.907-.862 8.508-2.657 6.818-4.706 8.53-14.048 3.824-20.866-.323-.468-18.475-26.939-36.652-61.853a74.112 74.112 0 0124.307-4.095c41.062 0 74.469 33.407 74.469 74.469s-33.407 74.47-74.469 74.47z"/>
+                          </svg>
+                          <a class="uppercase text-lg font-bold ml-3 hover:text-orange-500" href="#">travel insurance</a>
+                    </div>
+                    <div class="w-full md:w-56 h-px opacity-75 bg-gray-400 mb-3"></div>
+                    <div class="flex items-center h-10">
+                        <svg class="h-6 w-6 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M469.585 80.732c-55.679-52.984-146.306-52.984-202.003-.012l-11.581 11-11.569-10.995c-55.703-52.979-146.318-52.973-202.021 0C15.061 106.739 0 141.244 0 177.874c0 36.642 15.061 71.141 42.415 97.166l201.219 191.033A17.886 17.886 0 00256 471.007c4.449 0 8.899-1.647 12.366-4.94L469.585 275.04C496.933 249.021 512 214.517 512 177.88c0-36.636-15.067-71.135-42.415-97.148zm-24.756 168.259L256 428.269 67.177 248.997C47.026 229.835 35.93 204.576 35.93 177.88s11.096-51.955 31.247-71.117c21.019-20.001 48.625-29.995 76.237-29.995 27.618 0 55.236 10.006 76.255 30.007l23.953 22.75c6.934 6.593 17.815 6.593 24.75 0l23.959-22.762c42.044-39.996 110.448-39.996 152.492 0 20.145 19.163 31.247 44.421 31.247 71.117s-11.102 51.949-31.241 71.111z"/>
+                          </svg>
+                          <a class="uppercase text-lg font-bold ml-3 hover:text-orange-500" href="#">life insurance</a>
+                    </div>
+                    <div class="w-full md:w-56 h-px opacity-75 bg-gray-400 mb-3"></div>
+
+                    <div class="flex items-center h-10">
+                        <svg class="h-6 w-6 fill-current text-gray-500" height="512" viewBox="0 0 16 16" width="512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.794 6.166l-1.122-3.74A1.988 1.988 0 0011.756 1H4.244c-.89 0-1.66.573-1.916 1.426l-1.122 3.74A2.001 2.001 0 000 8v4a1 1 0 001 1v1a1 1 0 001 1h1a1 1 0 001-1v-1h8v1a1 1 0 001 1h1a1 1 0 001-1v-1a1 1 0 001-1V8c0-.82-.497-1.526-1.206-1.834zM4.244 3h7.512l.9 3H3.344l.9-3zM4 10.5a1 1 0 110-2 1 1 0 010 2zm8 0a1 1 0 110-2 1 1 0 010 2z"/>
+                          </svg>
+                          <a class="uppercase text-lg font-bold ml-3 hover:text-orange-500" href="#">car insurance</a>
+                    </div>
+                    <div class="xl:hidden w-full md:w-56 h-px opacity-75 bg-gray-400"></div>
+                </div>
+                <div class="mx-auto my-5">
+                    <img class="w-10/12 h-full md:w-full xl:max-w-xs mx-auto object-cover" src="images/video-placeholder.png" alt="">
+                </div>
+
+                <div class="w-10/12 mx-auto my-5 xl:max-w-xs">
+                    <h1 class="uppercase text-xl font-extrabold">about us</h1>
+                    <p class="text-xs font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde enim id laborum illum temporibus mollitia placeat. Distinctio placeat voluptatem vero eveniet. Beatae corrupti, fugit dignissimos est tempora inventore quibusdam autem!</p>
+                    <ul class="mt-2 px-4 text-xs font-semibold about-us list-disc">
+                        <li class="mt-3">General Medical</li>
+                        <li class="mt-3">Outdoor Checkup</li>
+                        <li class="mt-3">Easy and Affordable Billing</li>
+                    </ul>
+                    <button class="orange-btn m-0 mt-5 rounded-none px-6">read more</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
