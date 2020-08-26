@@ -591,9 +591,45 @@ video {
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
 
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -704,7 +740,7 @@ select {
   cursor: pointer;
 }
 
-li a{
+li a {
   margin-left: 0.5rem;
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -759,6 +795,10 @@ li a:hover {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
+.list-style-arrow {
+  list-style: url('../images/list-style.svg');
+}
+
 @media (min-width: 768px) {
   .width {
     width: 66.666667%;
@@ -788,6 +828,13 @@ li a:hover {
 }
 
 @media (min-width: 1280px) {
+  .width {
+    width: 58.333333%;
+    margin: auto;
+    min-width: 850px;
+    max-width: 64rem;
+  }
+
   .orange-btn {
     margin-right: -0.25rem;
     margin-top: -0.25rem;
@@ -11963,6 +12010,10 @@ li a:hover {
 
 .min-w-700 {
   min-width: 700px;
+}
+
+.min-w-850 {
+  min-width: 850px;
 }
 
 .min-w-full {
@@ -33841,6 +33892,10 @@ li a:hover {
     min-width: 700px;
   }
 
+  .sm\:min-w-850 {
+    min-width: 850px;
+  }
+
   .sm\:min-w-full {
     min-width: 100%;
   }
@@ -55650,6 +55705,10 @@ li a:hover {
 
   .md\:min-w-700 {
     min-width: 700px;
+  }
+
+  .md\:min-w-850 {
+    min-width: 850px;
   }
 
   .md\:min-w-full {
@@ -77463,6 +77522,10 @@ li a:hover {
     min-width: 700px;
   }
 
+  .lg\:min-w-850 {
+    min-width: 850px;
+  }
+
   .lg\:min-w-full {
     min-width: 100%;
   }
@@ -99272,6 +99335,10 @@ li a:hover {
 
   .xl\:min-w-700 {
     min-width: 700px;
+  }
+
+  .xl\:min-w-850 {
+    min-width: 850px;
   }
 
   .xl\:min-w-full {
